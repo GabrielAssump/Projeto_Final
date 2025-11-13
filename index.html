@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Projeto Final/biblio.css">
+    <script src="../Projeto Final/biblioteca.js"></script>
+    <title>Biblioteca Digital</title>
+</head>
+<body>
+    
+<h1>Biblioteca Digital</h1>
+
+<section id="escritores">
+  <h2>Cadastrar Escritor</h2>
+  <form>
+    <label>Nome:</label>
+    <input type="text" name="nome"><br>
+    
+    <label>Nacionalidade:</label>
+    <input type="text" name="nacionalidade"><br>
+    
+    <button type="submit">Cadastrar Escritor</button>
+  </form>
+</section>
+
+<section id="livros">
+  <h2>Cadastrar Livro</h2>
+  <form>
+    <label>Título:</label>
+    <input type="text" name="titulo"><br>
+    
+    <label>Gênero:</label>
+    <input type="text" name="genero"><br>
+    
+    <label>Autor:</label>
+    <select name="id_escritor">
+        <option>Selecione um autor</option>
+        
+    </select><br>
+    
+    <button type="submit">Cadastrar Livro</button>
+  </form>
+</section>
+
+<section id="lista-escritores">
+  <h2>Escritores Cadastrados</h2>
+  <table>
+    <tr>
+      <th>ID</th><th>Nome</th><th>Nacionalidade</th>
+    </tr>
+    <tr>
+      <td>1</td><td>Machado de Assis</td><td>Brasil</td>
+    </tr>
+  </table>
+</section>
+
+<section id="lista-livros">
+  <h2>Livros Cadastrados</h2>
+  <table>
+    <tr>
+      <th>ID</th><th>Título</th><th>Gênero</th><th>Autor</th>
+    </tr>
+    <tr>
+      <td>1</td><td>Dom Casmurro</td><td>Romance</td><td>Machado de Assis</td>
+    </tr>
+  </table>
+</section>
+</body>
+</html>
